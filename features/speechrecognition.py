@@ -1,5 +1,4 @@
 import os
-import io
 import json
 import datetime
 import openai
@@ -39,32 +38,25 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-def record_audio():
+def record_and_transcribe():
     """
-    Record audio from the microphone and return an in-memory file-like object
-    (no audio logs are saved to disk).
+    Record audio from the microphone and transcribe it using Google's Speech Recognition.
+    No audio files are saved to disk.
     """
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening for your command...")
         recognizer.adjust_for_ambient_noise(source, duration=1)
         audio = recognizer.listen(source)
-    # Get audio data as WAV bytes and wrap it in a BytesIO object
-    audio_bytes = audio.get_wav_data()
-    audio_file = io.BytesIO(audio_bytes)
-    audio_file.name = "audio.wav"  # Set a filename attribute (required by some APIs)
-    return audio_file
-
-def transcribe_audio(audio_file):
-    """Transcribe the in-memory audio file using OpenAI's Whisper API."""
     try:
-        transcription = openai.Audio.transcribe(
-            model="whisper-1",
-            file=audio_file
-        )
-        return transcription
-    except Exception as e:
-        print(f"Error during transcription: {e}")
+        transcription_text = recognizer.recognize_google(audio)
+        print("Transcription:", transcription_text)
+        return transcription_text
+    except sr.UnknownValueError:
+        print("Could not understand audio.")
+        return None
+    except sr.RequestError as e:
+        print(f"Error with Google Speech Recognition service: {e}")
         return None
 
 def chat_with_gpt(prompt, conversation_history):
@@ -74,7 +66,7 @@ def chat_with_gpt(prompt, conversation_history):
     """
     try:
         messages = []
-        # Add past conversation entries for context
+        # Add past conversation entries to messages
         for entry in conversation_history:
             messages.append({"role": "user", "content": entry["prompt"]})
             messages.append({"role": "assistant", "content": entry["response"]})
@@ -101,37 +93,27 @@ def log_conversation(prompt, response):
     history.append(entry)
     save_conversation_history(history)
 
-def listen_and_process():
-    """Record audio, transcribe it, and return the transcription text."""
-    audio_file = record_audio()
-    transcription_text = transcribe_audio(audio_file)
-    if transcription_text:
-        print("Transcription:", transcription_text)
-    else:
-        print("No transcription available.")
-    return transcription_text
-
 def main():
     conversation_history = load_conversation_history()
     speak("Hello, I am your TARS replica. How can I assist you today?")
     
     while True:
         print("Waiting for your command (say 'exit' to quit)...")
-        prompt_text = listen_and_process()
+        prompt_text = record_and_transcribe()
         if not prompt_text:
             continue
         if "exit" in prompt_text.lower():
             speak("Goodbye!")
             break
         
-        # Get GPT response with conversation history for context ("memory")
+        # Get GPT response using conversation history for context ("memory")
         gpt_response = chat_with_gpt(prompt_text, conversation_history)
         if gpt_response:
             print("ChatGPT Response:", gpt_response)
             speak(gpt_response)
-            # Log the conversation (prompt and response)
+            # Log the conversation (prompt and response with timestamp)
             log_conversation(prompt_text, gpt_response)
-            # Reload conversation history to include the latest conversation
+            # Update conversation history
             conversation_history = load_conversation_history()
         else:
             print("No response from ChatGPT.")
