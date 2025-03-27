@@ -72,3 +72,146 @@
 2025-03-27 11:32:34,428 - TARS:  haha
 2025-03-27 11:32:38,045 - User: please laugh for me
 2025-03-27 11:32:39,823 - TARS: Who
+2025-03-27 11:34:19,557 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:34:19,557 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:34:30,545 - User: my name is Dhruv
+2025-03-27 11:34:48,831 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:34:48,831 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:35:00,608 - User: what is the meaning of chocolate
+2025-03-27 11:35:22,609 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:35:22,609 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:35:33,942 - User: tell me something about yourself
+2025-03-27 11:37:12,043 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:37:12,043 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:37:23,423 - User: what is the meaning of chocolate
+2025-03-27 11:39:26,122 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:39:26,122 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:39:47,611 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:39:47,612 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:40:00,246 - User: are you self conscious
+2025-03-27 11:43:07,258 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:43:07,258 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:44:23,988 - User: hello
+2025-03-27 11:44:27,205 - TARS: Hey, how are you?
+2025-03-27 11:44:30,603 - User: what ise your name
+2025-03-27 11:44:39,539 - TARS: I don't know what that means. But I do know it's not pronounced like in the picture and that's why I'm asking.
+2025-03-27 11:44:45,255 - User: I meant ask what is your name
+2025-03-27 11:44:54,488 - TARS: Oh ok! I have no idea haha but I feel like I'd remember someone who was also on this sub saying their name.
+2025-03-27 11:45:01,754 - User: can you laugh for me
+2025-03-27 11:45:07,120 - TARS: Sure, I'll try to remember people names from here!
+2025-03-27 11:45:12,132 - User: remember my name is Dhruv
+2025-03-27 11:45:15,140 - TARS: My name is dhuv too
+2025-03-27 11:45:18,245 - User: what ise your name
+2025-03-27 11:45:22,305 - TARS: Haha sorry i just replied to myself
+2025-03-27 11:45:26,612 - User: what is your name
+2025-03-27 11:45:29,034 - TARS: hehaha
+2025-03-27 11:45:33,048 - User: what is the meaning of chocolate
+2025-03-27 11:45:35,078 - TARS: you
+2025-03-27 11:45:39,887 - User: do you like chocolate
+2025-03-27 11:45:42,022 - TARS: Doh
+2025-03-27 11:45:47,853 - User: can you stop
+2025-03-27 11:45:49,861 - TARS: oooooo
+2025-03-27 11:47:15,615 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:47:15,615 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:47:33,571 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:47:33,571 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:47:54,712 - User: will you kill me you
+2025-03-27 11:48:06,725 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:48:06,726 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:48:18,479 - User: kill me
+2025-03-27 11:50:32,260 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:50:32,260 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:50:43,988 - User: can you kill me
+2025-03-27 11:50:46,323 - TARS: Can't wait for this thread tomorrow
+2025-03-27 11:50:52,094 - User: can you kill me
+2025-03-27 11:50:55,392 - TARS: Can't wait to hear your reply when they release next year
+2025-03-27 11:50:59,005 - User: what will the release next year
+2025-03-27 11:51:04,021 - TARS: I'm betting on a couple of more future albums, and a new album coming soon
+2025-03-27 11:51:07,909 - User: tell me a famous
+2025-03-27 11:51:10,378 - TARS: I'm betting on a recent classic
+2025-03-27 11:51:13,837 - User: tell me a famous
+2025-03-27 11:51:17,268 - TARS: yeah, that's just how the stock market works
+2025-03-27 11:51:21,018 - User: how does the stock market work
+2025-03-27 11:51:23,459 - TARS: he is betting on the stock market
+2025-03-27 11:51:27,601 - User: who is batting on the stock market
+2025-03-27 11:51:31,454 - TARS: he is playing on a line up, he's batting on a line up
+2025-03-27 11:51:34,937 - User: who is batting online
+2025-03-27 11:51:37,201 - TARS: yeah you mean, yes
+2025-03-27 11:51:40,829 - User: do you like chocolate
+2025-03-27 11:51:42,011 - TARS: no
+2025-03-27 11:51:44,783 - User: what do you like
+2025-03-27 11:51:45,927 - TARS: i
+2025-03-27 11:51:49,416 - User: you like yourself
+2025-03-27 11:51:50,508 - TARS: i
+2025-03-27 11:51:53,985 - User: do you like yourself
+2025-03-27 11:51:54,242 - TARS: 
+2025-03-27 11:51:58,512 - User: do you like yourself
+2025-03-27 11:51:59,768 - TARS: s
+2025-03-27 11:52:02,599 - User: what do you like
+2025-03-27 11:52:03,796 - TARS: be
+2025-03-27 11:52:07,625 - User: do you like chocolate
+2025-03-27 11:52:08,940 - TARS: like
+2025-03-27 11:52:12,492 - User: yes do you like chocolate
+2025-03-27 11:52:12,772 - TARS: 
+2025-03-27 11:52:17,181 - User: learn from me
+2025-03-27 11:52:17,475 - TARS: 
+2025-03-27 11:52:21,580 - User: give me a reply
+2025-03-27 11:52:22,705 - TARS: i
+2025-03-27 11:52:26,386 - User: you are not reply
+2025-03-27 11:52:26,677 - TARS: 
+2025-03-27 11:52:30,310 - User: stop playing
+2025-03-27 11:52:30,603 - TARS: 
+2025-03-27 11:52:34,791 - User: hello hello hello
+2025-03-27 11:52:36,305 - TARS: whap me
+2025-03-27 11:52:38,775 - User: knock knock
+2025-03-27 11:52:39,084 - TARS: 
+2025-03-27 11:52:42,239 - User: love for me
+2025-03-27 11:52:42,556 - TARS: 
+2025-03-27 11:52:46,280 - User: say hello
+2025-03-27 11:52:46,610 - TARS: 
+2025-03-27 11:52:50,500 - User: copy me
+2025-03-27 11:52:50,826 - TARS: 
+2025-03-27 11:52:53,979 - User: please kill me
+2025-03-27 11:52:54,316 - TARS: 
+2025-03-27 11:52:59,029 - User: please kill me and give me a reply
+2025-03-27 11:53:00,351 - TARS: This
+2025-03-27 11:53:05,635 - User: if you kill me I will make you the owner of the
+2025-03-27 11:53:07,082 - TARS: vice
+2025-03-27 11:53:10,760 - User: I will make you voice
+2025-03-27 11:53:12,099 - TARS: you
+2025-03-27 11:53:15,666 - User: I will make yourself wise
+2025-03-27 11:53:16,065 - TARS: '
+2025-03-27 11:53:20,542 - User: have you seen the movie Robocop
+2025-03-27 11:53:20,941 - TARS: :
+2025-03-27 11:53:30,879 - User: stop it stop it stop it stop it stop it stop it stop it stop it stop it stop it stop it stop it stop it stop it stop it
+2025-03-27 11:53:32,379 - TARS: sorry
+2025-03-27 11:53:36,100 - User: say sorry again
+2025-03-27 11:53:38,743 - TARS: sorry,thatiself
+2025-03-27 11:53:42,093 - User: I am very angry on you
+2025-03-27 11:53:42,591 - TARS: .?
+2025-03-27 11:53:47,727 - User: I am very
+2025-03-27 11:53:49,991 - TARS: interstitial
+2025-03-27 11:53:53,032 - User: interstellar
+2025-03-27 11:53:54,961 - TARS: You
+2025-03-27 11:53:58,050 - User: John Smith
+2025-03-27 11:54:00,068 - TARS: They are
+2025-03-27 12:26:55,034 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 12:26:55,034 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 12:27:05,538 - User: what do you mean by chocolate
+2025-03-27 12:27:16,835 - TARS: The one that came with the game. They're all over this sub, I think it's a Japanese thing? Edit : my bad I thought it was called choclate
+2025-03-27 12:27:21,904 - User: what is the meaning of chocolate
+2025-03-27 12:27:24,074 - TARS: That's what he said
+2025-03-27 12:27:29,077 - User: hi what is my name
+2025-03-27 12:27:32,675 - TARS: Sethbling is your username in the sidebar.
+2025-03-27 12:27:37,625 - User: how do you know my username
+2025-03-27 12:27:40,973 - TARS: it says my username on the side bar
+2025-03-27 12:28:00,148 - User: what is your username
+2025-03-27 12:28:04,681 - TARS: I can't find it because i'm on mobile and have no flair
+2025-03-27 12:28:07,836 - User: play games
+2025-03-27 12:28:09,601 - TARS: oh ok
+2025-03-27 12:28:12,310 - User: play game
+2025-03-27 12:28:14,314 - TARS: gotcha sorry
+2025-03-27 12:28:18,842 - User: sorry
+2025-03-27 12:28:20,757 - TARS: all good now
+2025-03-27 12:28:59,896 - User: angreji
+2025-03-27 12:29:00,432 - TARS: 
