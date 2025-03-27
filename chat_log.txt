@@ -1,0 +1,74 @@
+2025-03-27 11:22:48,942 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:22:48,942 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:23:23,017 - User: hu r u
+2025-03-27 11:23:25,405 - TARS: H r r u?
+2025-03-27 11:23:29,652 - User: hu r u
+2025-03-27 11:23:31,539 - TARS: u r
+2025-03-27 11:23:36,692 - User: what is your name
+2025-03-27 11:23:38,817 - TARS: h r r
+2025-03-27 11:23:44,261 - User: what are you talking about
+2025-03-27 11:23:46,973 - TARS: Hu? Hu?
+2025-03-27 11:24:40,719 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:24:40,720 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:24:50,818 - User: your name
+2025-03-27 11:24:53,296 - TARS: So far so good.
+2025-03-27 11:24:58,571 - User: do you understand what I say
+2025-03-27 11:25:03,162 - TARS: I'm sorry I just don't understand what's so funny about this.
+2025-03-27 11:25:07,020 - User: please so funny about this
+2025-03-27 11:25:09,694 - TARS: oh god I will use this
+2025-03-27 11:27:08,021 - User: Bullet problem
+2025-03-27 11:27:10,426 - TARS: I can't see why?
+2025-03-27 11:27:18,061 - User: Software Development Manager
+2025-03-27 11:27:24,725 - TARS: Ok, it says that you have a question about an application... What's the application...
+2025-03-27 11:27:32,070 - User: what are you talking about tribal language
+2025-03-27 11:27:35,852 - TARS: The way i say these words you get what i want
+2025-03-27 11:27:45,626 - User: who are you from
+2025-03-27 11:27:47,714 - TARS: oh god
+2025-03-27 11:28:01,633 - User: what is your name
+2025-03-27 11:28:04,482 - TARS: What are you talking about
+2025-03-27 11:28:12,387 - User: literally a joke
+2025-03-27 11:28:15,136 - TARS: im talking about a band
+2025-03-27 11:28:23,390 - User: hello Google r u
+2025-03-27 11:28:25,538 - TARS: can make it
+2025-03-27 11:29:51,332 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\Trainee\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-27 11:29:51,333 - Using writeable comtypes cache directory: 'C:\Users\Trainee\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\comtypes\gen'
+2025-03-27 11:30:02,952 - User: what is your name
+2025-03-27 11:30:05,836 - TARS: Added you! :D
+2025-03-27 11:30:13,428 - User: motivation
+2025-03-27 11:30:25,098 - TARS: I can offer you two of my favourite starters. FC 4398 9952 2155 IGN Hachimanagi
+2025-03-27 11:30:31,239 - User: what r u talking about
+2025-03-27 11:30:34,889 - TARS: I have one you can have, for now.
+2025-03-27 11:30:39,129 - User: will you give me a chocolate
+2025-03-27 11:30:42,007 - TARS: I have the entire box of them
+2025-03-27 11:30:46,088 - User: ha ha
+2025-03-27 11:30:49,561 - TARS: haha I can't wait, I want one
+2025-03-27 11:30:54,500 - User: what do you eat for Din
+2025-03-27 11:30:59,388 - TARS: No, I don't eat anything, I just want it lol
+2025-03-27 11:31:08,027 - User: can you understand me
+2025-03-27 11:31:11,719 - TARS: I was referring to you as'tihk'XD XD
+2025-03-27 11:31:19,008 - User: I am a very smart boy
+2025-03-27 11:31:20,741 - TARS: you
+2025-03-27 11:31:24,967 - User: what is your name
+2025-03-27 11:31:26,657 - TARS: t
+2025-03-27 11:31:32,467 - User: can I call you hello my name
+2025-03-27 11:31:35,720 - TARS: You XD XD XD
+2025-03-27 11:31:40,558 - User: can I call you Hakuna Matata
+2025-03-27 11:31:40,828 - TARS: 
+2025-03-27 11:31:46,587 - User: can I call you Hakuna
+2025-03-27 11:31:48,362 - TARS: H
+2025-03-27 11:31:51,778 - User: can I call you me
+2025-03-27 11:31:54,122 - TARS: .me XD
+2025-03-27 11:31:58,128 - User: what is the meaning of XD
+2025-03-27 11:32:00,409 - TARS:  I,what XD
+2025-03-27 11:32:05,532 - User: what is the meaning of hello
+2025-03-27 11:32:08,026 - TARS: Who?S?
+2025-03-27 11:32:13,025 - User: are you Legend stupid
+2025-03-27 11:32:15,098 - TARS: yournol
+2025-03-27 11:32:18,455 - User: are you stupid
+2025-03-27 11:32:21,163 - TARS: i??who
+2025-03-27 11:32:25,128 - User: yes you are stupid
+2025-03-27 11:32:27,001 - TARS: That
+2025-03-27 11:32:32,453 - User: hello hello hello hello hello
+2025-03-27 11:32:34,428 - TARS:  haha
+2025-03-27 11:32:38,045 - User: please laugh for me
+2025-03-27 11:32:39,823 - TARS: Who
