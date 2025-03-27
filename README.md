@@ -23,14 +23,16 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 - Raspberry Pi 4 2GB
 - MG996R Servo Motor
 - Ultrasonic Sensors
-- Power Bank 5V 3A
-- 5-Inch HDMI Touchscreen Display
+- 10000mAh Power Bank 5V 3A
+- 5-Inch HDMI Display 800*480 Pixel XPT2046 Touch Controller
 - Bluetooth Speaker
-- Switches
-- Capacitors
 - Raspberry Pi Official Camera 5MP
 - Connecting Wires
-- Battery Holders
+- Four 3.7V Li-ion Cell 7.4Wh
+- Six 18650 Lithium Ion Rechargeable Batteries 2600mAh
+- Switches , rheostats ,capacitors ,etc
+- 12V Cooling Fans
+- Bluetooth Speaker
 
 **Software Overview :**
 
