@@ -21,7 +21,7 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 **Hardware Components :**
 
 - Raspberry Pi 4 2GB
-- MG996R Servo Motor
+- MG996R Servo Motors
 - Ultrasonic Sensors
 - 10000mAh Power Bank 5V 3A
 - 5-Inch HDMI Display 800*480 Pixel XPT2046 Touch Controller
@@ -41,7 +41,8 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 - Libraries and Frameworks
 - RPi.GPIO / gpiozero
 - OpenCV
-- SpeechRecognition and pyttsx3
+- SpeechRecognition
+- pyttx3
 
 
 **Getting Involved**
