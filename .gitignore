@@ -1,1 +1,43 @@
-.qodo
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# macOS files
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Logs and DB
+*.log
+*.sqlite
+*.db
+
+# Compiled Arduino files
+*.hex
+*.elf
+
+# Output & temp folders
+dist/
+build/
+*.egg-info/
+
+# Testing data
+testing/__pycache__/
+*.bak
+
+# Ignore Qodo history (if not needed in repo)
+.qodo/
