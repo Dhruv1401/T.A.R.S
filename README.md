@@ -48,11 +48,11 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 ## ⚡ Development Philosophy
 
 
-- Lightweight & Local-first  
+- Lightweight & Local 
 - Modular and Extendable  
 - Raspberry Pi friendly  
-- Inspired by real sci-fi HCI concepts
-
+- Inspired by the movie.
+- Sleek , modern and fasionable.
 
 
 ## ✨ Credits
