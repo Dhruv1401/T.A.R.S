@@ -4,7 +4,6 @@
 T.A.R.S is an ongoing project aimed at creating a functional replica of the robot from the movie *Interstellar*, utilizing a Raspberry Pi 4 as the central processing unit. The project is in its early stages, with foundational work underway.
 
 
----
 
 ## 🧠 Features
 
@@ -26,8 +25,6 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 - 🖥️ **GUI-based Dashboard** — 🔜 *Not Started*
 
 
----
-
 
 ## 🧰 Hardware Used
 
@@ -44,7 +41,6 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 - Switches, Rheostats, Capacitors, etc.  
 - 12V Cooling Fans  
 
----
 
 
 ## ⚡ Development Philosophy
@@ -54,11 +50,10 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 - Raspberry Pi friendly  
 - Inspired by real sci-fi HCI concepts
 
----
+
 
 ## ✨ Credits
 
 Made with 💡 by [@Dhruv1401](https://github.com/Dhruv1401)  
 Built with Passion, Python, and Pi.
 
----
