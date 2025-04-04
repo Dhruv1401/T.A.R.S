@@ -41,3 +41,4 @@ testing/__pycache__/
 
 # Ignore Qodo history (if not needed in repo)
 .qodo/
+.qodo
