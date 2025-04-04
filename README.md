@@ -7,6 +7,7 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 
 ## 🧠 Features
 
+
 - 🔊 **Audio Output via Bluetooth Speaker** — ✅ *Completed*
 - 🧾 **Conversation Logging** — ✅ *Completed* 
 - 🎤 **Voice Input via Speech Recognition** — 🛠️ *In Progress*   
@@ -28,6 +29,7 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 
 ## 🧰 Hardware Used
 
+
 - Raspberry Pi 4 (2GB RAM)
 - MG996R Servo Motors  
 - Ultrasonic Distance Sensors  
@@ -44,6 +46,7 @@ T.A.R.S is an ongoing project aimed at creating a functional replica of the robo
 
 
 ## ⚡ Development Philosophy
+
 
 - Lightweight & Local-first  
 - Modular and Extendable  
