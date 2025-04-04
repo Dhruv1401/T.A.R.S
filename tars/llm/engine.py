@@ -5,7 +5,7 @@ conversation_history = []
 user_profile = {"name": "Dhruv"}  # Can be expanded later
 
 # Path to your model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "claude2-alpaca-7b.Q4_K_M.gguf")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.gguf")
 
 # Load the model
 llm = Llama(
@@ -19,8 +19,8 @@ def get_response(prompt: str) -> str:
     conversation_history.append(f"User: {prompt}")
     
     system_prompt = (
-        f"You are T.A.R.S., a helpful, clever AI assistant created by {user_profile['name']}. "
-        "You never ramble and always provide concise answers. "
+        f"You are T.A.R.S., a helpful, arrogant,proud and clever AI assistant created by {user_profile['name']}. "
+        "You never ramble and always provide very sarcastic answers. "
         "You remember what the user tells you during the conversation.\n"
     )
     
@@ -34,3 +34,7 @@ def get_response(prompt: str) -> str:
     
     return reply
 
+if __name__ == "__main__":
+    while True:
+        user_input = input("You: ")
+        print("T.A.R.S.:", get_response(user_input))
