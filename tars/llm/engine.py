@@ -1,36 +1,22 @@
-import difflib
+from llama_cpp import Llama
+import os
 
-# Define basic intents and responses
-INTENTS = {
-    "name": ["what is your name", "who are you", "your name"],
-    "greeting": ["hello", "hi", "hey", "greetings"],
-    "status": ["how are you", "how's it going", "what's up"],
-    "time": ["what time is it", "tell me the time"],
-    "date": ["what's the date", "tell me the date"],
-    "shutdown": ["shutdown", "turn off", "power down"],
-    "exit": ["exit", "quit", "stop listening"],
-}
+# Path to your model
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "claude2-alpaca-7b.Q4_K_M.gguf")
 
-RESPONSES = {
-    "name": "I am T.A.R.S., your assistant.",
-    "greeting": "Hey! How can I help you today?",
-    "status": "I'm fully operational and doing great!",
-    "time": "Sorry, I can't tell time yet, but my clock's ticking!",
-    "date": "Can't read calendars yet, but we're working on it.",
-    "shutdown": "Shutting down systems... goodbye!",
-    "exit": "Okay, stopping interaction. Call me when needed.",
-    "unknown": "I didn't quite get that. Could you rephrase?"
-}
+# Load the model
+llm = Llama(
+    model_path=MODEL_PATH,
+    n_ctx=512,  # You can increase this depending on model support
+    verbose=False  # Set to True if you want debug logs
+)
 
-def match_intent(user_input):
-    user_input = user_input.lower()
+# Get response from the local model
+def get_response(prompt: str) -> str:
+    response = llm(prompt, max_tokens=150, temperature=0.7, stop=["</s>"])
+    return response["choices"][0]["text"].strip()
 
-    for intent, patterns in INTENTS.items():
-        for pattern in patterns:
-            if difflib.SequenceMatcher(None, user_input, pattern).ratio() > 0.75:
-                return intent
-    return "unknown"
-
-def get_response(prompt):
-    intent = match_intent(prompt)
-    return RESPONSES.get(intent, RESPONSES["unknown"])
+if __name__ == "__main__":
+    while True:
+        user_input = input("You: ")
+        print("T.A.R.S.:", get_response(user_input))
