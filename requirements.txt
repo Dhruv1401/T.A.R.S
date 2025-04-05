@@ -1,35 +1,17 @@
-# Voice I/O
-speechrecognition==3.10.0
-pyttsx3==2.90
-pyaudio==0.2.13
+# Core
+speechrecognition
+pyttsx3
+pyaudio
 
-# Terminal-based GUI
-rich==13.7.0
-
-# LLM interaction
-llama-cpp-python==0.2.56  # You can pin a version that supports gguf
-sentencepiece==0.1.99
-
-# OS automation
-psutil==5.9.8
-
-# Core utilities
-requests==2.31.0
-
-# Logging and formatting
-colorama==0.4.6
-
-# If you're using any Arduino/serial communication
-pyserial==3.5
-
-# Optional for Raspberry Pi GPIO (uncomment for RPi only)
-# RPi.GPIO==0.7.1
-
-
-
-
+# LLM & embeddings
+llama-cpp-python
 textblob
 resemblyzer
 numpy
 soundfile
-pyaudio
+
+# Terminal UI
+urwid
+
+# Utilities
+psutil
