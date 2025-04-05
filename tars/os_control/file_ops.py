@@ -1,12 +1,11 @@
 import os
 
-def list_files(directory="."):
-    return os.listdir(directory)
+def list_files(dir="."):
+    return os.listdir(dir)
 
-def create_file(filename):
-    with open(filename, "w") as f:
-        f.write("")
+def create_file(name):
+    open(name, "w").close()
 
-def delete_file(filename):
-    if os.path.exists(filename):
-        os.remove(filename)
+def delete_file(name):
+    if os.path.exists(name):
+        os.remove(name)
