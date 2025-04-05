@@ -1,15 +1,12 @@
 import speech_recognition as sr
 
-def listen_and_respond():
-    recognizer = sr.Recognizer()
-    mic = sr.Microphone()
-    with mic as source:
-        print("Listening...")
-        audio = recognizer.listen(source)
-
+def listen():
+    """Capture and return transcribed speech (empty string if unrecognized)."""
+    r = sr.Recognizer()
+    with sr.Microphone() as mic:
+        r.adjust_for_ambient_noise(mic)
+        audio = r.listen(mic)
     try:
-        return recognizer.recognize_google(audio)
-    except sr.UnknownValueError:
-        return "I didn't get that."
-    except sr.RequestError:
-        return "Speech service error."
+        return r.recognize_google(audio)
+    except (sr.UnknownValueError, sr.RequestError):
+        return ""
