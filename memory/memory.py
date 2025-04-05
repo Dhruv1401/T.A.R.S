@@ -1,14 +1,11 @@
-import json, os
+import os, json
 
-MEMORY_DIR = os.path.join(os.path.dirname(__file__), '..', '..', 'memory')
-os.makedirs(MEMORY_DIR, exist_ok=True)
+DIR = os.path.join(os.path.dirname(__file__))
+os.makedirs(DIR, exist_ok=True)
 
 def load_memory(user: str) -> dict:
-    path = os.path.join(MEMORY_DIR, f"{user}.json")
-    if os.path.exists(path):
-        return json.load(open(path))
-    return {}
+    path = os.path.join(DIR, f"{user}.json")
+    return json.load(open(path)) if os.path.exists(path) else {}
 
 def save_memory(user: str, data: dict):
-    path = os.path.join(MEMORY_DIR, f"{user}.json")
-    json.dump(data, open(path, 'w'), indent=4)
+    json.dump(data, open(os.path.join(DIR, f"{user}.json")), indent=4)
