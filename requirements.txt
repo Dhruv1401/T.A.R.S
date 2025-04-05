@@ -24,3 +24,12 @@ pyserial==3.5
 
 # Optional for Raspberry Pi GPIO (uncomment for RPi only)
 # RPi.GPIO==0.7.1
+
+
+
+
+textblob
+resemblyzer
+numpy
+soundfile
+pyaudio
