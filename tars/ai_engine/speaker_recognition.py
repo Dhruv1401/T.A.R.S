@@ -1,26 +1,20 @@
-import os, pickle, numpy as np
+import pickle, numpy as np, os
 from resemblyzer import VoiceEncoder, preprocess_wav
-from pathlib import Path
 
-ENCODER = VoiceEncoder()
-VOICE_DIR = Path(__file__).parents[2] / "memory" / "voices"
-VOICE_DIR.mkdir(parents=True, exist_ok=True)
+VOICE_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "memory", "voices")
+os.makedirs(VOICE_DIR, exist_ok=True)
+ENC = VoiceEncoder()
 
-def load_voice_embedding(user: str):
-    path = VOICE_DIR / f"{user}.pkl"
-    return pickle.load(open(path, "rb")) if path.exists() else None
+def save_voice_embedding(user: str, emb):
+    pickle.dump(emb, open(os.path.join(VOICE_DIR, f"{user}.pkl"), "wb"))
 
-def save_voice_embedding(user: str, emb: np.ndarray):
-    pickle.dump(emb, open(VOICE_DIR / f"{user}.pkl", "wb"))
-
-def identify_speaker(audio_path: str) -> str | None:
-    wav = preprocess_wav(audio_path)
-    emb = ENCODER.embed_utterance(wav)
-    best, best_score = None, 0.0
-    for file in VOICE_DIR.glob("*.pkl"):
-        user = file.stem
-        known = pickle.load(open(file, "rb"))
-        score = float(np.dot(emb, known) / (np.linalg.norm(emb)*np.linalg.norm(known)))
-        if score > best_score:
-            best, best_score = user, score
-    return best if best_score > 0.75 else None
+def identify_speaker(wav_path: str) -> str | None:
+    emb = ENC.embed_utterance(preprocess_wav(wav_path))
+    best, score = None, 0
+    for fn in os.listdir(VOICE_DIR):
+        user = fn[:-4]
+        known = pickle.load(open(os.path.join(VOICE_DIR, fn),"rb"))
+        s = np.dot(emb,known)/(np.linalg.norm(emb)*np.linalg.norm(known))
+        if s>score:
+            best, score = user, s
+    return best if score>0.75 else None
