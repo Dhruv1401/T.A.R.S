@@ -10,3 +10,5 @@ def run_terminal():
             break
         reply = get_response(text, user="default")
         print(f"T.A.R.S.: {reply}")
+
+#Use only for text-based I/O
