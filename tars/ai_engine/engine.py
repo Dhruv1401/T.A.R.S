@@ -11,7 +11,7 @@ from tars.intent import detect_intent  # remove if you truly don't want intent.p
 params = load_params()
 
 # Load GGUF model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "claude2-alpaca-7b.Q4_K_M.gguf")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "claude2-alpaca-7b.Q4_K_M.gguf") #Download this model from HuggingFace.
 llm = Llama(model_path=MODEL_PATH, n_ctx=512, n_threads=4)
 
 # Setup daily chat log
