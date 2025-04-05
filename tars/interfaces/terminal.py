@@ -1,7 +1,12 @@
-def start_terminal():
-    print("Terminal Interface Online. Type 'exit' to quit.")
+from tars.ai_engine.engine import get_response
+
+def run_terminal():
+    """Simple text-only chat loop."""
+    print("T.A.R.S. Text Mode — type 'exit' to quit.")
     while True:
-        user_input = input("You: ")
-        if user_input.lower() in ["exit", "quit"]:
+        text = input("You: ").strip()
+        if text.lower() in ("exit", "quit"):
+            print("T.A.R.S.: Goodbye!")
             break
-        print("T.A.R.S.: Processing...")
+        reply = get_response(text, user="default")
+        print(f"T.A.R.S.: {reply}")
