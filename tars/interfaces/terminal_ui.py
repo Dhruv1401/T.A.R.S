@@ -1,6 +1,6 @@
 from tars.interfaces.voice_input import listen_and_identify
 from tars.interfaces.voice_output import speak
-from tars.llm.engine import get_response
+from tars.ai_engine.engine import get_response
 
 def run_terminal_ui():
     print("T.A.R.S. Terminal Mode. Say 'exit' to quit.")

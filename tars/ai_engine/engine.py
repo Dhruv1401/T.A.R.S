@@ -1,9 +1,9 @@
 import os, datetime, random, logging, wave, tempfile
 from llama_cpp import Llama
-from tars.core.sentiment import analyze_sentiment
-from tars.core.memory import load_memory, save_memory
-from tars.core.profiles import get_user_by_voice, set_user_profile
-from tars.core.speaker_recognition import identify_speaker, save_voice_embedding, preprocess_wav, ENCODER
+from tars.ai_engine.sentiment import analyze_sentiment
+from memory.memory import load_memory, save_memory
+from memory.profiles import get_user_by_voice, set_user_profile
+from tars.ai_engine.speaker_recognition import identify_speaker, save_voice_embedding, preprocess_wav, ENCODER
 from tars.intent import detect_intent
 from tars.parameters import load_params
 
