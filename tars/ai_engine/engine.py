@@ -1,80 +1,69 @@
-import os, datetime, random, logging, wave, tempfile
+import os, datetime, random, logging
 from llama_cpp import Llama
 from tars.ai_engine.sentiment import analyze_sentiment
-from memory.memory import load_memory, save_memory
-from memory.profiles import get_user_by_voice, set_user_profile
-from tars.ai_engine.speaker_recognition import identify_speaker, save_voice_embedding, preprocess_wav, ENCODER
-from tars.intent import detect_intent
+from tars.core.memory import load_memory, save_memory
+from tars.memory.profiles import get_user_by_voice, set_user_profile
+from tars.ai_engine.speaker_recognition import identify_speaker
 from tars.parameters import load_params
+from tars.intent import detect_intent  # remove if you truly don't want intent.py
 
 # Load parameters
 params = load_params()
 
-# Load model
+# Load GGUF model
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "claude2-alpaca-7b.Q4_K_M.gguf")
 llm = Llama(model_path=MODEL_PATH, n_ctx=512, n_threads=4)
 
-# Setup chatlogs
-LOG_BASE = os.path.join(os.path.dirname(__file__), "..", "..", "chatlogs")
-os.makedirs(LOG_BASE, exist_ok=True)
+# Setup daily chat log
+BASE_LOG = os.path.join(os.path.dirname(__file__), "..", "..", "chatlogs")
 today = datetime.datetime.now().strftime("%Y-%m-%d")
-LOG_FILE = os.path.join(LOG_BASE, today, "log.txt")
-os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
-logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s - %(message)s")
+LOG_PATH = os.path.join(BASE_LOG, today, "log.txt")
+os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
+logging.basicConfig(filename=LOG_PATH, level=logging.INFO, format="%(asctime)s - %(message)s")
 
 # Thinking fillers
-fillers = ["Uhh...", "Hmm...", "Let me think...", "Calculating...", "Ahh..."]
+fillers = params.get("thinking_fillers", ["Uhh...", "Hmm...", "Let me think..."])
 
-def record_and_identify(recognizer, mic):
-    audio = recognizer.listen(mic)
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-        wav_path = tmp.name
-        with wave.open(wav_path, "wb") as wf:
-            wf.setnchannels(1)
-            wf.setsampwidth(audio.sample_width)
-            wf.setframerate(audio.sample_rate)
-            wf.writeframes(audio.get_wav_data())
-    speaker = identify_speaker(wav_path)
-    if not speaker:
-        print("T.A.R.S.: I don't recognize your voice. What is your name?")
-        name = input("You: ").strip()
-        emb = ENCODER.embed_utterance(preprocess_wav(wav_path))
-        save_voice_embedding(name, emb)
-        set_user_profile(wav_path, name)
-        speaker = name
-    return speaker, recognizer.recognize_google(audio)
+def get_response(text: str, user: str) -> str:
+    # Speaker identification if needed
+    if user == "default":
+        speaker = identify_speaker(text)
+        if speaker:
+            user = speaker
+        else:
+            print("T.A.R.S.: I don't know you. What's your name?")
+            name = input("You: ").strip()
+            set_user_profile(text, name)
+            user = name
 
-def get_response(user_input: str, user: str) -> str:
-    # Log and sentiment
-    sentiment = analyze_sentiment(user_input)
-    logging.info(f"{user} [{sentiment}]: {user_input}")
+    # Sentiment log
+    sentiment = analyze_sentiment(text)
+    logging.info(f"{user} [{sentiment}]: {text}")
 
-    # Intent
-    intent = detect_intent(user_input)
+    # Intent (optional)
+    intent = detect_intent(text) if 'detect_intent' in globals() else None
     if intent == "exit":
         return "Shutting down. Bye!"
     if intent == "greeting":
-        return random.choice(["Hey there!", "Hello!", "What's up?"])
+        return random.choice(["Hey!", "Hello!", "Yo!"])
     if intent == "ask_name":
         return "I'm T.A.R.S., your tactical assistant."
-    if intent == "ask_time":
-        return datetime.datetime.now().strftime("It's %H:%M now.")
-    if intent == "ask_date":
-        return datetime.datetime.now().strftime("Today is %Y-%m-%d.")
 
-    # Thinking filler
+    # Thinking
     print(random.choice(fillers))
 
-    # Build prompt
-    prompt = f"{SYSTEM_PROMPT}\\nUser: {user_input}\\nT.A.R.S.:"
-    resp = llm(prompt, max_tokens=150, temperature=params["humor"], top_p=params["honesty"], stop=["User:", "T.A.R.S:"])
-    reply = resp["choices"][0]["text"].strip()
+    # LLM call
+    prompt = f"{text}\nT.A.R.S.:"
+    out = llm(prompt, max_tokens=150,
+              temperature=params["humor"],
+              top_p=params["honesty"],
+              stop=["User:", "T.A.R.S:"])
+    reply = out["choices"][0]["text"].strip()
 
-    # Log reply
+    # Log and memory
     logging.info(f"T.A.R.S.: {reply}")
-    # Save memory
     mem = load_memory(user)
-    mem[datetime.datetime.now().isoformat()] = user_input
+    mem[datetime.datetime.now().isoformat()] = text
     save_memory(user, mem)
 
     return reply
