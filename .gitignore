@@ -44,6 +44,6 @@ testing/__pycache__/
 .qodo
 
 #Very Large Files
-.tars/
-llm/
-*.model.gguf
+tars/
+ai_engine/
+*.claude2-alpaca-7b.Q4_K_M.gguf
