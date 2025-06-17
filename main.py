@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from interface import text_interface, voice_interface # type: ignore
 from engine import engine as tars_engine
 from engine import speech_recognition, emotion_engine
-from interface import text_interface, voice_interface
+
 
 def main():
     while True:
